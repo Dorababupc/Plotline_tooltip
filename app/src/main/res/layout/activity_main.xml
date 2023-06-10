@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/target_button_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Target Button (e.g., button1, button2)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/font_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/target_button_edittext"
+        android:hint="Font for Tooltip"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/color_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/font_edittext"
+        android:hint="Color of Tooltip Text"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/position_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/color_edittext"
+        android:hint="Position of Tooltip (left, right, top, bottom)"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/position_edittext"
+        android:layout_centerHorizontal="true"
+        android:text="Submit" />
+
+</LinearLayout>
